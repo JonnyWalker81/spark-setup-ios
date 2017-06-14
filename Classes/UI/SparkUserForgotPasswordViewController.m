@@ -95,7 +95,7 @@
         self.resetPasswordButton.userInteractionEnabled = NO;
         if ([SparkSetupCustomization sharedInstance].productMode) // TODO: fix that so it'll work for non-org too
         {
-            [[SparkCloud sharedInstance] requestPasswordResetForCustomer:self.emailTextField.text productId:[SparkSetupCustomization sharedInstance].productId completion:passwordResetCallback];
+            // [[SparkCloud sharedInstance] requestPasswordResetForCustomer:self.emailTextField.text productId:[SparkSetupCustomization sharedInstance].productId completion:passwordResetCallback];
         }
         else
         {
